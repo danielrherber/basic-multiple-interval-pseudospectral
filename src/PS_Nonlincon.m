@@ -60,8 +60,8 @@ function [c,ceq] = PS_Nonlincon(x,p)
     ceq = [ceq;reshape(cell2mat(defect),[],1)];
     
     % state and control continuity constraints between segments
-    for i = 1:length(p.Narray)-1
-        contin{i,1} = X(p.cumN(i+1),:) - X(p.cumN(i+1)+1,:);
+    for i = 2:length(p.Narray)
+        contin{i-1,1} = X(p.cumN(i),:) - X(p.cumN(i)+1,:);
     end
     ceq = [ceq;reshape(cell2mat(contin),[],1)];
 

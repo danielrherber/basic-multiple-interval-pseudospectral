@@ -18,7 +18,7 @@ This project implements multiple-interval pseudospectral methods to solve optima
 ```matlab
 INSTALL_Basic_Pseudospectral
 ```
-- See [BD_main.m](https://github.com/danielrherber/basic-multiple-interval-pseudospectral/blob/master/examples/BD_main.m) to run the Bryson-Denham example
+- See [BD_main.m](https://github.com/danielrherber/basic-multiple-interval-pseudospectral/blob/master/examples/bryson-denham/BD_main.m) to run the Bryson-Denham example
 ```matlab
 open BD_main
 ```

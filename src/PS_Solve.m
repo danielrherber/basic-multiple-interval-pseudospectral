@@ -69,7 +69,7 @@ function [t,X,U,f,p] = PS_Solve(p)
     
 	% additional options
     if isfield(p.opts,'fmincon')
-        options = optimoptions(options,p.opts.fmincon);
+        options = optimoptions(options,'MaxIterations',p.opts.fmincon.MaxIter);
     end
 
     % start timer
